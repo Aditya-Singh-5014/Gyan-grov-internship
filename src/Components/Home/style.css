@@ -1,0 +1,23 @@
+.Home {
+  background-image: url(../Images/Banner.svg);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media (max-width: 1220px) {
+  .Home {
+    height: 70vh !important;
+    background-position: center;
+    h2 {
+      span {
+        display: none;
+      }
+    }
+  }
+}

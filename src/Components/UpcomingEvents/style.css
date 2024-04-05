@@ -1,0 +1,116 @@
+.upcomingEvents {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+  width: 80%;
+  justify-content: center; /* Added from the second block */
+}
+
+.col-main {
+  display: flex;
+  justify-content: center;
+  width: calc(33%); /* Initial width, 3 columns */
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+@media (max-width: 1024px) {
+  .col-main {
+    width: calc(50% - 10px); /* 2 columns for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .col-main {
+    width: calc(100% - 10px); /* 1 column for even smaller screens */
+  }
+}
+
+.main-card {
+  display: flex;
+  border-radius: 10px;
+  justify-content: flex-end;
+  height: 250px;
+  width: 100%;
+  border: 1px solid #b0babf;
+  .card-image {
+    border-radius: 10px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+.main-card {
+  padding: 10px;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 24px;
+  color: black;
+
+  .card-details {
+    width: 80%;
+  }
+
+  h2 {
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .card-image {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%; /* Make card-image take up the full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .event-date {
+      border-radius: 0 0 10px 10px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin-bottom: 0;
+      padding: 10px; /* Add padding as needed */
+    }
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+
+  .card-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    h3 {
+      color: #989090;
+    }
+  }
+
+  .card-location div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+  }
+}
+
+/* Added from the first block for 500px part */
+@media (max-width: 500px) {
+  .card-image {
+    height: 250px !important;
+    width: 300px !important;
+  }
+  .col-main {
+    width: calc(100% - 10px); /* 1 column for screens up to 500px */
+  }
+}

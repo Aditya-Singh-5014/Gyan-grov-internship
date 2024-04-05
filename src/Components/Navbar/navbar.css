@@ -1,0 +1,121 @@
+nav {
+  width: 100%;
+  color: #989090;
+  background-color: white;
+  .navbar {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+
+    .categories {
+      background-color: black !important;
+      color: white;
+    }
+    button {
+      width: 100px;
+      background-color: white;
+      display: flex;
+      justify-content: space-around;
+      cursor: pointer;
+      transition: 0.5s;
+
+      width: 100px;
+      background-color: white;
+      display: flex;
+      justify-content: space-around;
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    h1 {
+      color: #cf2d2d;
+    }
+
+    .icons {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .search,
+    .fav-login {
+      display: flex;
+      flex-direction: row;
+      gap: 0 1%;
+    }
+    .input {
+      width: 500px;
+      border-width: 1px;
+      border-radius: 5px;
+      border-color: #b0babf;
+      height: 30px;
+      border-style: solid;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      input {
+        padding-left: 10px;
+        width: 90%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+      img {
+        width: 10%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 1220px) {
+  .navbar {
+    width: 90%;
+  }
+  .categories {
+    display: none !important;
+  }
+  input {
+    width: 50%;
+    background-color: #cf2d2d;
+  }
+  .input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  nav {
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    .navbar {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; /* Adjusted layout */
+      align-items: center; /* Center-align items */
+    }
+    .search {
+      display: none !important;
+    }
+    .fav-login {
+      button {
+        width: 40px;
+        border: none;
+        background-color: transparent;
+      }
+      margin: 0;
+    }
+  }
+}
